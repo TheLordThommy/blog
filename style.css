@@ -1,0 +1,129 @@
+
+/* Importation des polices de caractères depuis Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+/* 
+    Je mets en commentaire le CSS de la 2ème police pour pouvoir l'utiliser plus tard.
+                        font-family: 'Source Code Pro', monospace;
+ */
+
+body {
+    margin: 10px 80px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav {
+    /* Permet au bloc nav de faire suite au bloc h1 */
+    display: flex;
+    /* Permet de mettre les bloc les uns sous les autres lorsque l'on passe à un format smartphone */
+    flex-wrap: wrap;
+    /* Le Titre du blog et le menu sont chacn à une extrémité */
+    justify-content: space-between;
+    
+}
+
+nav h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+}
+
+nav .onglets {
+    margin-top: 35px;
+}
+
+nav .onglets a {
+    text-decoration: none;
+    color: #7f7e7e;
+    margin: 10px;
+}
+
+/* Mise en page de la section article */
+.articles {
+    margin-top: 30px;
+}
+
+/* Mise en page du texte de chaque article */
+.articles .article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.articles .article .left img {
+    height: 300px;
+    width: 500px;
+}
+                
+
+/* Entre les deux : en réduisant l'image, le texte ne sera pas placé à droite 
+de celle-ci, tout simplement parce que la div contenant le texte prend toute la largeur. On doit réduire la div du texte de 50% */
+
+.articles .article .right {
+    max-width: 50%;
+    margin-left: 40px;
+}
+
+.articles .article .right p.date{
+    color: #7f7e7e;
+}
+
+.articles .article .right p.description{
+    color: #2d2d2d;
+}
+
+/* Mise en page du footer */
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #7f7e7e;
+}
+
+footer h2 {
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+    /* Mise en page des icônes de social-media */
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media p {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+/* Mise en forme pour le format smarphone en utilant les @mediaqueries*/
+
+@media screen and (max-width: 640px) {
+    
+    /* Etendre et recentrer le corps de la page */
+    body {
+        margin: 1px 20px;
+    }
+
+    /* On adapte la barre de navigation */
+    nav .onglets {
+        margin-top: -10px;
+    }
+
+    /* On adapte chaque article */
+    .articles .article .left img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .articles .article .right {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    /* Mise en forme du footer */
+    footer .social-media {
+        margin: auto;
+    }
+}
