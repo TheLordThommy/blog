@@ -1,15 +1,25 @@
 # Blog : essais et création d'un blog pour le futur projet de site
 ***
-Short Description about the project.
+Le but de ce petit projet est de faire un blog. Il se présenetra au plus près de la version difinie pour le site qui m'est commandé.
+Je vais ajouter étape par étape les fonctionnalités prévues.
+
 
 ## Table of Contents
-1. [General Info](#general-info)
+1. [Informations Générales (General Info)](#general-info)
 2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+3. [Etapes](#etapes)
+4. [Installation](#installation)
+5. [Collaboration](#collaboration)
+6. [FAQs](#faqs)
 
 ## Informations Générales
+
+## Etapes
+    Pour chaque étape, je crée une branche.
+    
+ - Visuel simple en HTML et CSS
+ - Faire le Header le plus proche du projet final
+
 
 ## Technologies
 
