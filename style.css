@@ -13,6 +13,28 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+header {
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+/* Je place l'image d'arrière-plan dans un élément enfant du parent.
+Ainsi, l'image d'arrière-plan et le contenu du texte se trouveront sur leur propre "couche" dans l'élément parent.
+Je peux contrôler l'opacité de chaque couche sans affecter l'autre !  */
+header::before {
+    content: "";
+    background-image: url(https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    opacity: 0.4;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0;
+}
+
 nav {
     /* Permet au bloc nav de faire suite au bloc h1 */
     display: flex;
